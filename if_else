@@ -1,0 +1,175 @@
+#УСЛОВНЫЕ ОПЕРАТОРЫ
+#СИНТАКСИС IF
+# age = 18
+
+# if age >= 18:
+#     print("вы совершеннолетний")
+#if-else
+# temp = int(input("введите температуру:" ))
+
+# if temp > 30:
+#     print("жарко")
+# else:
+#     print("норм")
+#if-elif-else
+
+# grade = int(input("введите оценку: "))
+# if grade >= 90:
+#     print("оценка А")
+# elif grade >= 80:
+#     print("оценка В")
+# elif grade >= 70:
+#     print("оценка С")
+# elif grade >= 60:
+#     print("оценка D")
+# else:
+#     print("оценка F")
+
+#вложенные условия
+
+# weather = "дождь"
+# temp = 15
+# if weather == "дождь":
+#     print("возьмите зонт")
+#     if temp < 10:
+#         print("и оденьтесь теплее")
+#     else:
+#         print("куртка будет в самый раз")
+# else:
+#     print("можно без зонта")
+
+#логические операторы and, or, not
+#and - оба условия True
+# age = 25
+# has_licence = True
+#
+# if age >= 18 and has_licence:
+#     print("можно водить машину")
+# else:
+#     print("нельзя водить машину")
+# #or - хотя бы одно улсовие True
+# is_weekend = False
+# is_holiday = True
+#
+# if is_weekend or is_holiday:
+#     print("можно отдыхать")
+
+#not - инвертирует условие
+
+# is_raining = False
+#
+# if not is_raining:
+#     print("можно идти гулять")
+# else:
+#     print("сиди дома")
+
+#сравнение строк и других типов
+
+# name = input("введите ваше имя: ")
+#
+# if name.lower() == "влад":
+#     print("Привет, Влад")
+# else:
+#     print(f"Привет, {name}")
+#
+# email = "vlad.oleinikov09@mail.ru"
+# if "@" in email and "." in email:
+#     print("email введен верно")
+# #короткая форма: тернарный оператор
+#
+# age = 20
+# if age >= 18:
+#     status = "взрослый"
+# else:
+#     status = "ребенок"
+# print(f"cтатус: {status}")
+
+# print("Простой калькулятор")
+# print("1. Сложение")
+# print("2. Вычитание")
+# print("3. Умножение")
+# print("4. деление")
+#
+# choice = input("выберите операцию (1-4): ")
+# num1 = float(input("первое число: "))
+# num2 = float(input("второе число: "))
+#
+# if choice == '1':
+#     result = num1 + num2
+#     print(f"Результат: {num1} + {num2} = {result}")
+# elif choice == '2':
+#     result = num1 - num2
+#     print(f"Результат: {num1} - {num2} = {result}")
+# elif choice == '3':
+#     result = num1 * num2
+#     print(f"Результат: {num1} x {num2} = {result}")
+# elif choice == '4':
+#     if num2 != 0:
+#         result = num1 / num2
+#         print(f"Результат: {num1} / {num2} = {result}")
+#     else:
+#         print("Ошибка: деление на ноль невозможно")
+# else:
+#     print("неверный вобор операции")
+
+#проверка пароля
+# correct_password = "oQ4srf123"
+# user_password = input("введите пароль: ")
+# if user_password == correct_password:
+#     print("доступ разрешен: ")
+#     secrett_code = input("введите секретный код если знаете))): ")
+#     if secrett_code == "admin":
+#         print("Aдминистратор вошел в систему: ")
+#     else:
+#         print("обычный пользователь")
+# else:
+#     print("неверный пароль")
+
+# import datetime
+#
+# current_hour = datetime.datetime.now().hour
+#
+# print(f"сейчас {current_hour}:00")
+#
+# if 5 <= current_hour < 12:
+#     print("доброе утро")
+# elif 12 <= current_hour < 18:
+#     print("добрый день")
+# elif 18 <= current_hour < 23:
+#     print("добрый вечер")
+# else:
+#     print("доброй ночи")
+
+# TEXT_PROGRAM = "ПРОГРАММА, КОТОРАЯ ЗАПРАШИВАЕТ ЧИСЛО"
+# print(TEXT_PROGRAM)
+# num = int(input("введите число: "))
+# if num > 0:
+#     print("число положительное")
+# elif num < 0:
+#     print("число отрицательное")
+# elif num == 0:
+#     print("ноль")
+
+# TEXT_PROGRAM = "программа для проверки года на високосность"
+# print(TEXT_PROGRAM)
+# year = int(input("введите год: "))
+# result = year / 4 or year / 400 or not year / 100
+# if result == int(result):
+#     print("год високостный")
+# else:
+#     print("год невисокостный")
+
+# TEXT_PROGRAM = "индекс массы тела"
+# print(TEXT_PROGRAM)
+#
+# ves = float(input("введите вес(кг): "))
+# rost = float(input("введите рост(m): "))
+# imt = ves / rost**2
+# if imt < 18.5:
+#     print("Недостаточный вес")
+# elif 18.5 <= imt < 25:
+#     print("нормальный вес")
+# elif 25 <= imt < 30:
+#     print("избыточный вес")
+# elif imt >= 30:
+#     print("ожирение")
